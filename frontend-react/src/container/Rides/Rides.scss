@@ -1,0 +1,100 @@
+.app__rides-list {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+
+  .app__rides-filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto 0rem auto;
+    width: 90%;
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      list-style: none;
+
+      .app__rides-filter {
+        font-size: 1.2rem;
+        margin-right: 2.5rem;
+        color: var(--white-color);
+        margin-bottom: 1rem;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 3px;
+        font-weight: 400;
+        color: #d0cbcb;
+
+        &:hover {
+          border-bottom: 3px solid var(--white-color);
+          color: var(--white-color);
+          cursor: pointer;
+        }
+      }
+      .active {
+        border-bottom: 3px solid var(--white-color);
+        color: var(--white-color);
+        cursor: pointer;
+      }
+    }
+
+    .app__rides-filterIcon {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid transparent;
+      padding-bottom: 3px;
+      font-weight: 400;
+      color: #d0cbcb;
+
+      svg {
+        font-size: 26px;
+        margin-right: 0.2rem;
+        font-weight: 500;
+      }
+
+      &:hover {
+        color: var(--white-color);
+        cursor: pointer;
+      }
+
+      .app__rides-filterModal {
+        position: absolute;
+        background: #131313;
+        top: 2rem;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+
+        label {
+          border-bottom: 1px solid #cbcbcb;
+          color: #a5a5a5;
+          font-size: 16px;
+        }
+
+        select {
+          margin: 1rem auto 0rem auto;
+          background: #232323;
+          padding: 8px 4px;
+          color: #fff;
+          border-radius: 5px;
+          letter-spacing: 0.5px;
+          border: none;
+          option {
+            background: #232323;
+            padding: 8px 4px;
+            color: #fff;
+            // border-radius: 5px;
+            letter-spacing: 0.5px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

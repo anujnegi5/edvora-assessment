@@ -1,0 +1,59 @@
+.app__rideCard {
+  margin: 1rem auto;
+  width: 90%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: var(--ride-card-color);
+  padding: 2rem;
+  border-radius: 10px;
+
+  .app__rideCard-img {
+    height: 12rem;
+    width: 25rem;
+
+    img {
+      min-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+
+  .app__rideCard-info {
+    margin-left: 3rem;
+    font-size: 20px;
+    font-weight: 400;
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 0.25rem 0;
+
+        span {
+          font-weight: 500;
+          color: #cfcfcf;
+        }
+      }
+    }
+  }
+
+  .app__rideCard-location {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-size: 14px;
+      margin-left: 2rem;
+      background-color: rgba(0, 0, 0, 0.56);
+      padding: 0.25rem 1rem;
+      border-radius: 1rem;
+    }
+  }
+}

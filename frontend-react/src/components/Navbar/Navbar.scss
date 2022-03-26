@@ -1,0 +1,44 @@
+.app__navbar {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.app__navbar-logo {
+  color: var(--white-color);
+
+  h1 {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+}
+
+.app__navbar-profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .app__navbar-profileName {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--white-color);
+  }
+
+  .app__navbar-profileImg {
+    margin-left: 1.5rem;
+    img {
+      height: 44px;
+      width: 44px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}
